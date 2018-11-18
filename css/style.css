@@ -20,15 +20,17 @@ header img {
 
 header nav {
     float: right;
+    /* margin-top: 10px; */
 }
 
 header nav a {
     display:inline-block;
-    height: 20px;
-    line-height: 20px;
+    height: 100%;
+    line-height: 30px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     padding: 15px;
 }
 
@@ -41,15 +43,21 @@ header nav a:hover {
     height: 700px;
 }
 
-#Title img {
-    padding: 20px 50px;
-    margin-top: 20px
+#Title .profile {
+    width: 700px;
+    height: 100%;
+}
+
+#Title div img {
+    position: relative;
+    margin-top: 220px;;  
+    width: 30%;
 }
 
 #Title .position {
+    display: inline-block;
     color: white;
     position: absolute;
-    left: 600px;
 }
 #Title h1 {    
     font-size: 60px;
@@ -74,7 +82,7 @@ header nav a:hover {
     color: #fff; 
     text-align: center;
     padding-top: 80px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 0px;       
 }
 
@@ -89,20 +97,22 @@ header nav a:hover {
 }
 
 #Portfolio {
-    background-color: rgba(93, 193, 185, 0.1);    
+    background-color: rgba(93, 193, 185, 0.1);
+    height: 100%;
+    height: 700px;    
+}
+
+#Portfolio .linea-divisor {
+    border-bottom: 1px solid rgba(48, 48, 48, 0.5);
+    margin: 10px 0;
 }
 
 #Portfolio h1 {
     color: #f00; 
     text-align: center;
     padding: 80px 0 10px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0px 10px; 
-}
-
-#Portfolio .linea-divisor {
-    border-bottom: 1px solid rgba(48, 48, 48, 0.5);
-    margin: 10px 0;
 }
 
 #Portfolio .container p {
@@ -113,19 +123,53 @@ header nav a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
-
 }
 
 #Portfolio .item-portf {
+    position: relative;
     width: 300px;
     height: 400px;
     background-color: #fff;
     padding: 0 10px;    
     text-align: center;
+    margin-top: 10px;
 }
 
-.item-portf img {
+#Portfolio .item-portf img {
     max-width: 200px;
+    max-height: 240px;
+}
+
+#Portfolio .item-portf p {
+    background-color: rgba(48, 48, 48, 0.5);
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0px;
+    width: 94%;
+    color: #fff;
+    font-weight: bold;
+}
+
+#Contact {
+    background:#000 url('../images/Linea.jpg') no-repeat top left;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+#Contact h1 {
+    color:white;
+    font-size: 3rem;
+    padding-top: 60px;
+    margin-top: 0;
+}
+/* start here */
+/* --------------------- */
+
+footer {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 18px;
 }
 
 .container {
